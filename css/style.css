@@ -1,0 +1,211 @@
+
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Questrial&display=swap');
+*/html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+li,
+a,
+abbr,{
+/*    font-family: 'Questrial', sans-serif !important;
+*/    
+}
+
+a{
+    font-weight: 400
+}
+.landing {
+      width: 100%;
+      height: 90vh;
+      background: url('../images/pedro-lastra-v6Sy3kyBROE-unsplash.jpg') no-repeat 50% 50%;
+      background-size: cover;
+}
+
+.black {
+    background: #000;
+}
+
+
+/*scroll effect*/
+.navbar-trans {
+  background-color: transparent;
+  border: none;
+  transition: top 1s ease;
+}
+ 
+/*double row*/
+.navbar-doublerow > .navbar{
+      display: block;   
+      padding: 0px auto;
+      margin: 0px auto;
+      min-height: 25px;
+}
+.navbar-doublerow .nav{
+      padding: 0px auto;
+}
+.navbar-doublerow .dividline{
+  margin: 5px 100px;
+  padding-top: 1px;
+  background-color: inherit;
+}
+/*top nav*/
+.navbar-doublerow .navbar-top ul>li>a {
+      padding: 10px auto;
+      font-size: 12px;
+      font-weight: 600;
+} 
+/*down nav*/
+.navbar-doublerow .navbar-down .navbar-brand {
+      padding: 0px auto;
+      float: left;
+      color: #fff;
+      font-size: 32px;
+      font-family: 'Questrial', sans-serif !important;
+}
+.navbar-doublerow .navbar-down ul>li>a{
+      font-size: 16px;
+       font-family: 'Questrial', sans-serif !important;
+      color: #fff;
+      font-weight: 600;
+      transition: border-bottom .2s ease-in , transform .2s ease-in-out;
+}
+.navbar-doublerow .navbar-down ul>li>a:hover{
+      border-bottom: 2px solid #fff;
+      color: #fff;
+}
+
+.navbar-doublerow .navbar-down ul>li>a>i:hover{
+      color: #AC4147;
+}
+.navbar-doublerow .navbar-down .dropdown{
+    padding: 5px;
+    color: #fff;
+}
+.navbar-doublerow .navbar-down .dropdown ul>li>a,
+.navbar-doublerow .navbar-down .dropdown ul>li>a:hover{
+  color: #000;
+  border-bottom: 1px solid #AC4147;
+}
+.navbar-doublerow.navbar-trans.afterscroll {
+}     
+.navbar-doublerow.navbar-trans.afterscroll {
+   top:-50px;
+}     
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-item {
+}
+/*text*/
+.text-white,.text-white-hover:hover{color:#fff!important}
+/*fontcolor*/
+.light-grey {color:#000!important;background-color:#E6E9ED!important}
+
+
+
+
+
+.search_header {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  
+
+}
+
+
+#exTab1 .tab-content {
+  color : white;
+  background-color: #F8F6F8;
+  padding : 5px 15px;
+  width: 70%
+}
+
+
+#exTab1 .nav-pills > li > a {
+  border-radius: 0;
+}
+
+.holiday_search > li {
+    background: #504C5D;
+    color: #fff;
+font-family: 'Questrial', sans-serif !important;
+}
+
+.holiday_search > li >a{
+      color: #fff;
+}
+.holiday_search{
+
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+      color: #fff;
+      background-color: #AC4147 !important;
+}
+
+.top_icons >li>a>.fab, .fa, .fas{
+      color: #fff;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #AC4147 ;
+    color: #fff;
+}
+
+
+.booking-form {
+    padding: 13px;
+}
+
+.form-label{
+      color: #504C5D;
+      text-transform: uppercase;
+      font-weight: 600
+}
+.global_links >li>a{
+      background: none;
+      border-left: 1px solid #fff;
+}
+
+
+.global_links >li>a:hover{
+      background: #AC4147;
+color: #fff;}
+
+.bbottom{
+      border-bottom: 1px solid #fff
+}
+
+
+.form-control{
+      border-radius: 0px;
+}
+
+.submit-btn {
+    background: #AC4147;
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.form-checkbox > label {
+    color: #504C5D;
+    font-weight: 600
+}

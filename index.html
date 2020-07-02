@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Responsive Sticky Navbar</title>
+     
+      <script src="https://kit.fontawesome.com/9286f62faf.js" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="css/style.css">
+      
+            <script src="js/script.js"></script>
+   </head>
+   <body>
+      <div class="wrapper">
+         
+         <div class="landing">
+            <nav class="nav navbar navbar-doublerow navbar-trans navbar-fixed-top">
+              <!-- top nav -->
+              <nav class="navbar navbar-top hidden-xs bbottom">
+                <div class="container">
+                  <!-- left nav top -->
+
+
+                  <ul class="nav navbar-nav pull-left global_links">
+                    <li><a href="#" class="text-white"> Home</a></li>
+                    <li><a href="#" class="text-white">FAQs</a></li> 
+                    <li><a href="#" class="text-white">Contact</a></li> 
+                    <li><a href="#" class="text-white">USD</a></li> 
+                  </ul>
+
+                  
+                  <!-- right nav top -->
+                 <ul class="nav navbar-nav pull-right top_icons">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                    <li><a href="#"><i class="fas fa-phone-volume"></i></a></li>
+                  </ul>
+                </div>
+              </nav>
+              <!-- down nav -->
+              <nav class="navbar navbar-down">
+                <div class="container">
+                  <div class="flex-container">  
+                    <div class="navbar-header flex-item">
+                      <div class="navbar-brand" href="#">CANVAS</div>
+                    </div>
+                    <ul class="nav navbar-nav flex-item pull-right hidden-xs">
+                      <li><a href="#"><i class="fas fa-home"></i> HOME</a></li>
+                      <li><a href="#"><i class="fas fa-plane"></i> FLIGHTS</a></li> 
+                      <li><a href="#"><i class="fas fa-hotel"></i> HOTELS</a></li> 
+                      <li><a href="#"><i class="fas fa-pen"></i> BLOG</a></li> 
+                    
+                      <li><a href="#" class=""><i class="fas fa-phone"></i> 180-105-2541</a></li> 
+                    </ul>
+                    <!-- dropdown only moblie -->
+                      <div class="dropdown visible-xs pull-right">
+                        <button class="btn btn-default dropdown-toggle " type="button" id="dropdownmenu" data-toggle="dropdown">
+                          <span class="glyphicon glyphicon-align-justify"></span> 
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Projects</a></li>
+                          <li><a href="#">Pricing</a></li> 
+                          <li><a href="#">TheTeam</a></li> 
+                          <li role="separator" class="divider"></li>
+                          <li><a href="#">contact us</a></li>
+                        </ul>
+                      </div>
+                    </div>  
+                  </div>
+                </nav>
+              </nav> 
+
+
+
+              <div class="search_header">
+
+               
+                  <div id="exTab1" class="container"> 
+                  <ul  class="nav nav-pills holiday_search">
+                           <li class="active">
+                          <a  href="#1a" data-toggle="tab"><i class="fas fa-plane"></i> Flights</a>
+                           </li>
+                           <li><a href="#1a" data-toggle="tab"><i class="fas fa-hotel"></i>  Hotels</a>
+                           </li>
+                           <li><a href="#1a" data-toggle="tab">Flights & Hotel</a>
+                           </li>
+                        <li><a href="#1a" data-toggle="tab"><i class="fas fa-gift"></i>
+ Holidays</a>
+                           </li>
+                        </ul>
+
+                           <div class="tab-content clearfix">
+                             <div class="tab-pane active" id="1a">
+                                 
+                                 <div id="booking" class="section">
+
+                                    <div class="row">
+                                       
+                                        <div class="col-md-12">
+                                            <div class="booking-form">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <div class="form-checkbox">
+                                                            <label for="roundtrip">
+                                                                <input type="radio" id="roundtrip" name="flight-type" />
+                                                                <span></span>Roundtrip
+                                                            </label>
+                                                            <label for="one-way">
+                                                                <input type="radio" id="one-way" name="flight-type" />
+                                                                <span></span>One way
+                                                            </label>
+                                                            <label for="multi-city">
+                                                                <input type="radio" id="multi-city" name="flight-type" />
+                                                                <span></span>Multi-City
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <span class="form-label">From</span>
+                                                                <input class="form-control" type="text" placeholder="City or airport" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <span class="form-label">To</span>
+                                                                <input class="form-control" type="text" placeholder="City or airport" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <span class="form-label">Departure</span>
+                                                                <input class="form-control" type="date" required="" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <span class="form-label">Arrival</span>
+                                                                <input class="form-control" type="date" required="" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+                                                                <span class="form-label">Adults (18+)</span>
+                                                                <select class="form-control">
+                                                                    <option>1</option>
+                                                                    <option>2</option>
+                                                                    <option>3</option>
+                                                                </select>
+                                                                <span class="select-arrow"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+                                                                <span class="form-label">Children (0-17)</span>
+                                                                <select class="form-control">
+                                                                    <option>0</option>
+                                                                    <option>1</option>
+                                                                    <option>2</option>
+                                                                </select>
+                                                                <span class="select-arrow"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+                                                                <span class="form-label">Travel class</span>
+                                                                <select class="form-control">
+                                                                    <option>Economy class</option>
+                                                                    <option>Business class</option>
+                                                                    <option>First class</option>
+                                                                </select>
+                                                                <span class="select-arrow"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-btn">
+                                                        <button class="submit-btn">Search  flights</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+
+
+                              </div>
+                              <div class="tab-pane" id="1a">
+                            <h3>We use the class nav-pills instead of nav-tabs which automatically creates a background color for the tab</h3>
+                              </div>
+                           <div class="tab-pane" id="1a">
+                            <h3>We applied clearfix to the tab-content to rid of the gap between the tab and the content</h3>
+                              </div>
+                            <div class="tab-pane" id="1a">
+                            <h3>We use css to change the background color of the content to be equal to the tab</h3>
+                              </div>
+                           </div>
+                    </div>
+
+              </div>
+      </div>
+        
+         
+      </div>
+   </body>
+</html>
